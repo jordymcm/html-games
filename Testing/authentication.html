@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        
+    </style>
+    
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.3.0/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.3.0/firebaseui.css" />
+    
+    
+    <script>
+    
+        
+            
+            
+    
+      
+      
+      
+      
+            
+        // var config = {
+        //     apiKey: "AIzaSyBcAemkywkpJyIRAa-TBfnbyhrbCxr8GJ0",
+        //     authDomain: "test-13482.firebaseapp.com",
+        //     databaseURL: "https://test-13482.firebaseio.com",
+        //     projectId: "test-13482",
+        //     storageBucket: "",
+        //     messagingSenderId: "577292061885"
+        // };
+        
+       
+        
+            
+            
+            
+        var config = {
+            apiKey: "AIzaSyBcAemkywkpJyIRAa-TBfnbyhrbCxr8GJ0",
+            authDomain: "test-13482.firebaseapp.com",
+            databaseURL: "https://test-13482.firebaseio.com",
+            projectId: "test-13482",
+            storageBucket: "",
+            messagingSenderId: "577292061885"
+        };
+        
+        
+        firebase.initializeApp(config);
+        
+            
+        var uiConfig = {
+        callbacks: {
+            signInSuccessWithAuthResult: function(authResult, redirectUrl) {
+                // User successfully signed in.
+                // Return type determines whether we continue the redirect automatically
+                // or whether we leave that to developer to handle.
+                
+                console.log(authResult);
+                return false;
+            },
+            signInWithRedirect: function() {
+                return false;
+            },
+            signInSuccess: function(currentUser, credential, redirectUrl) {
+                console.log('Current User', currentUser);
+                return false;
+            },
+            uiShown: function() {
+                // The widget is rendered.
+                // Hide the loader.
+                // self.$.loader.style.display = 'none';
+            }
+        },
+        // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
+        signInFlow: 'popup',
+        //signInSuccessUrl: 'http://localhost:8081/components/stunt-hamster/?mode=done',
+        signInOptions: [
+            // Leave the lines as is for the providers you want to offer your users.
+            firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+            //firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+            //firebase.auth.TwitterAuthProvider.PROVIDER_ID,
+            //firebase.auth.GithubAuthProvider.PROVIDER_ID,
+            //firebase.auth.PhoneAuthProvider.PROVIDER_ID,
+            firebase.auth.EmailAuthProvider.PROVIDER_ID
+        ],
+        // Terms of service url.
+        tosUrl: '<your-tos-url>',
+        // Privacy policy url.
+        privacyPolicyUrl: '<your-privacy-policy-url>'
+    };
+
+
+      // Initialize the FirebaseUI Widget using Firebase.
+      var ui = new firebaseui.auth.AuthUI(firebase.auth());
+      // The start method will wait until the DOM is loaded.
+    
+    function signin() {
+      
+        ui.start('#auth', uiConfig);
+    
+    }
+    
+    window.onload = function() {
+        var myUrl = window.location.href;
+        if(myUrl.substring(myUrl.indexOf("mode=") + 5) === "select") {
+            signin();
+        }
+    }
+        
+    </script>
+</head>
+
+<body>
+    <div id="auth"></div>
+    
+    <!--<input type="text" id="user"  placeholder="Email"></input>-->
+    <!--<input type="text" id="password" placeholder="Password"></input>-->
+    <button id="signinbutton" onclick="signin()">SignIn</button>
+    <button id="signupbutton">SignUp</button>
+</body>

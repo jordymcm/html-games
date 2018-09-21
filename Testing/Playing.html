@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+    </style>
+
+    <script>
+        var type = "a";
+        
+        function search() {
+            console.log(type)
+            
+            if (type === "a") {
+                var url = "https://www.google.com.au/search?q=" + document.getElementById("search").value;
+            }
+            
+            if (type === "b") {
+                var url = "https://www.google.com.au/search?q=" + document.getElementById("search").value + "&tbm=isch&sa=X&ved=";
+            }
+
+            window.open(url);
+        }
+        
+        function a() {
+            type = "a";
+        }
+        
+        function b() {
+            type = "b";
+        }
+        
+    </script>
+</head>
+
+<body>
+    <input type="text" id="search" placeholder="Search" />
+    <button onclick="search('a')">Go</button>
+    <button onclick="a()">All</button>
+    <button onclick="b()">Images</button>
+</body>

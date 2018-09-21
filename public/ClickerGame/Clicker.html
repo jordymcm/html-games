@@ -53,6 +53,46 @@
             font-family: arial
         }
 
+        #saveButton:active {
+            background: #4c8ef7;
+        }
+
+        #clickerSound {
+            position: absolute;
+            left: 2vw;
+            bottom: 2vh;
+            height: 5vh;
+            width: 12vw;
+            background: #5e9af9;
+
+        }
+
+        #clickerSoundText {
+            position: absolute;
+            top: 1.6vh;
+            left: 0.5vh;
+            color: #ffffff;
+            text-align: left;
+            font-size: 1vw;
+            font-family: arial
+        }
+
+        #toggelClickerSound {
+            position: absolute;
+            bottom: 2vh;
+            height: 4vh;
+            width: 4vw;
+            right: 0.5vh;
+            top: 0.5vh;
+            background: red;
+            color: #ffffff;
+            text-align: center;
+            font-size: 3vmin;
+            font-family: arial
+        }
+
+
+
         #loggoutUserButton {
             position: absolute;
             right: 2vw;
@@ -66,9 +106,13 @@
             font-family: arial
         }
 
+        #loggoutUserButton:active {
+            background: #4c8ef7;
+        }
+
         #signInButton {
             position: absolute;
-            left: 0vmin;
+            left: 10vmin;
             height: 5vmin;
             width: 40vmin;
             background: #5e9af9;
@@ -78,30 +122,68 @@
             font-family: arial
         }
 
-        #makeAcountButton {
+        #gameInfo {
             position: absolute;
-            left: 41vmin;
-            height: 5vmin;
-            width: 40vmin;
-            background: #5e9af9;
+            left: 5vmin;
+            top: 10vmin;
+            height: 70vmin;
+            width: 50vmin;
+            background: #ff8c3f;
             color: #ffffff;
             text-align: center;
-            font-size: 4vmin;
-            font-family: arial
+
         }
+
+        #i1 {
+            font-size: 3vmin;
+            font-family: arial;
+            width: 50vmin;
+        }
+
+        #i2 {
+            padding-top: 3vmin;
+            font-size: 2vmin;
+            font-family: arial;
+            width: 50vmin;
+        }
+
+        /*#makeAcountButton {*/
+
+        /*    position: absolute;*/
+
+        /*    left: 41vmin;*/
+
+        /*    height: 5vmin;*/
+
+        /*    width: 40vmin;*/
+
+        /*    background: #5e9af9;*/
+
+        /*    color: #ffffff;*/
+
+        /*    text-align: center;*/
+
+        /*    font-size: 4vmin;*/
+
+        /*    font-family: arial*/
+
+        /*}*/
 
         #around {
             position: relative;
-            height: 7vmin;
-            width: 81vmin;
+            top: 5vh;
+            height: 90vmin;
+            width: 60vmin;
             margin: auto;
         }
+
+
 
 
         #showInfo {
             position: absolute;
             z-index: 4;
-            top: calc(90vh - 5vmin);
+            bottom: 2vh;
             left: 0px;
             height: 10vmin;
             width: 99vw;
@@ -117,17 +199,23 @@
             /*position:absolute;*/
             z-index: 500;
 
-            height: 10vmin;
-            width: 10vmin;
+            height: 40vmin;
+            width: 40vmin;
             /*background:red;*/
             /*border-radius:50%;*/
             margin: auto;
             position: relative;
-            top: calc(50vh - 10vmin);
+            /*left: calc(50vw - 25vmin);*/
+            top: calc(50vh - 25vmin);
+            border-radius: 50%;
+            background: #5e9af9;
         }
 
         #clickerIcon {
-            height: 30vmin;
+            position: absolute;
+            height: 15vmin;
+            top: calc(20vmin - 7.5vmin);
+            left: calc(20vmin - 7vmin);
             /*width:9vmin;*/
         }
 
@@ -149,7 +237,7 @@
 
         #detect {
             position: absolute;
-            z-index: 2;
+            z-index: 511;
             height: 5vh;
             width: 91vw;
         }
@@ -159,10 +247,11 @@
             border-radius: 3vmin;
             /*background:#478dff;*/
             background: #ff8c3f;
-            width: 90vw;
+            width: 78vw;
             height: 20vh;
             position: absolute;
-            z-index: 3;
+            left: 2vw;
+            z-index: 996;
 
 
 
@@ -174,6 +263,25 @@
 
 
         }
+
+
+        #feadback {
+            position: absolute;
+            top: 1vmin;
+            right: 1vmin;
+            background: #5e9af9;
+            width: 18vw;
+            height: 6vmin;
+            font-size: 3vmin;
+            font-family: arial;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        #feadbackIcon {
+            height: 3vmin;
+        }
+
 
         #helpButton {
             position: absolute;
@@ -203,7 +311,7 @@
 
 
         #closeInfoBoxButton {
-
+            position: absolute;
             right: 2vmin;
             bottom: 2vmin;
             background: #5e9af9;
@@ -214,10 +322,22 @@
             color: #ffffff;
         }
 
+        #closeLederbordButton {
+            position: absolute;
+            right: 1vw;
+            bottom: 1vw;
+            background: #5e9af9;
+            width: 10vmin;
+            height: 4vmin;
+            text-align: center;
+            font-size: 3vmin;
+            color: #ffffff;
+        }
+
         #closeShopButton {
             position: absolute;
-            right: 2vmin;
-            bottom: 2vmin;
+            right: 1vmin;
+            bottom: 1vmin;
             /*margin:3px;*/
             background: #5e9af9;
             width: 10vmin;
@@ -225,6 +345,36 @@
             text-align: center;
             font-size: 3vmin;
             color: #ffffff;
+        }
+
+        #bpsShopButton {
+            position: absolute;
+            left: 1vmin;
+            bottom: 1vmin;
+            background: #5e9af9;
+            width: 4vmin;
+            height: 4vmin;
+            text-align: center;
+            font-size: 3vmin;
+            color: #ffffff;
+        }
+
+        #bpcShopButton {
+            position: absolute;
+            left: 6vmin;
+            bottom: 1vmin;
+            background: #5e9af9;
+            width: 4vmin;
+            height: 4vmin;
+            text-align: center;
+            font-size: 3vmin;
+            color: #ffffff;
+        }
+
+        #bpsIcon {
+            padding-left: 0.5vmin;
+            padding-top: 0.5vmin;
+            height: 3vmin;
         }
 
         #shop {
@@ -239,7 +389,68 @@
             left: calc(50vw - 45vmin);
         }
 
+
+        #lederbord {
+            border-radius: 3vmin;
+            background: #ff8c3f;
+            width: 30vw;
+            height: 70vh;
+            bottom: 5vh;
+            position: absolute;
+            z-index: 992;
+
+            transition: left 2s;
+        }
+
+        #openLederbord {
+            width: 10vw;
+            height: 70vh;
+            bottom: 5vh;
+            left: 0px;
+            position: absolute;
+            z-index: 512;
+        }
+
+        #contaner {
+            margin-left: 2vmin;
+            margin-top: 2vmin;
+            width: 28vw;
+            height: 60vh;
+            float: left;
+            overflow-y: scroll;
+
+        }
+
+        #items {
+            width: 26.2vw;
+            height: 60vh;
+        }
+
+
+
+
+
+        #upgradeRight {
+            width: 40vmin;
+            height: 60vmin;
+            position: absolute;
+            right: 2vmin;
+        }
+
+        #upgradeLeft {
+            width: 40vmin;
+            height: 60vmin;
+            position: absolute;
+            left: 0px;
+        }
+
         #upgrades {
+            width: 90vmin;
+            height: 60vmin;
+            position: absolute;
+        }
+
+        #bpcUpgrade {
             width: 90vmin;
             height: 60vmin;
             position: absolute;
@@ -269,13 +480,73 @@
             position: absolute;
             top: 0px;
             left: 0px;
-            height: 3vh;
+            height: 2.9vh;
             background: #8ad35d;
             border-radius: 1vmin;
 
             transition: width 5s;
 
         }
+
+        #xp {
+            top: 2vh;
+            position: absolute;
+            left: 35vw;
+            width: 30vw;
+            height: 3vh;
+            border: 1px solid gray;
+            border-radius: 1vmin;
+            background: lightgray;
+        }
+
+        #fillXp {
+            left: 0px;
+            position: absolute;
+            z-index: 1;
+            /*width: 0vw;*/
+            height: 2.9vh;
+            /*border: 1px solid gray;*/
+            background: yellow;
+            border-radius: 1vmin;
+
+        }
+
+        #showXp {
+            position: absolute;
+            z-index: 2;
+            font-family: arial;
+            font-size: 2vh;
+            color: #2d2d2d;
+            width: auto;
+            margin: auto;
+            text-align: center;
+            width: 30vw;
+            margin-top: 0.5vh;
+        }
+
+        #level {
+            position: absolute;
+            left: 66vw;
+            height: 7vh;
+            width: 7vh;
+            background: #478dff;
+            font-family: arial;
+            font-size: 2vh;
+            color: #ffffff;
+
+            border-radius: 50%;
+        }
+
+        #levelText {
+            position: absolute;
+            top: 2.25vh;
+            width: 7vh;
+            text-align: center;
+        }
+
+
+
+
 
         #u1p {
             height: 6vmin;
@@ -313,6 +584,68 @@
             margin: 0.5vmin;
         }
 
+        #u7p {
+            height: 6vmin;
+            float: left;
+            margin: 0.5vmin;
+        }
+
+        /*TODO change height and width depending on the img*/
+
+        #u8p {
+            width: 6vmin;
+            float: left;
+            margin: 0.5vmin;
+        }
+
+        #u9p {
+            height: 6vmin;
+            float: left;
+            margin: 0.5vmin;
+        }
+
+        #u10p {
+            height: 6vmin;
+            float: left;
+            margin: 0.5vmin;
+        }
+
+        #u11p {
+            height: 6vmin;
+            float: left;
+            margin: 0.5vmin;
+        }
+
+        #u12p {
+            height: 6vmin;
+            float: left;
+            margin: 0.5vmin;
+        }
+
+
+        #cu1p {
+            height: 6vmin;
+            float: left;
+            margin: 0.5vmin;
+        }
+
+        #cu2p {
+            width: 6vmin;
+            float: left;
+            margin: 0.5vmin;
+        }
+
+
+        .over {
+            border-radius: 0.4vmin;
+            position: absolute;
+            top: 0px;
+            z-index: 10;
+            height: 9vmin;
+            width: 40vmin;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
         .left {
             width: 0vw;
         }
@@ -320,6 +653,18 @@
         .right {
             width: 20vw;
         }
+
+
+        .open {
+            left: -12vw;
+            /*border: 1px solid blue;*/
+        }
+
+        .close {
+            left: -30vw;
+            /*border: 1px solid red;*/
+        }
+
 
         .name {
             position: absolute;
@@ -345,6 +690,8 @@
             font-size: 1.5vmin;
             padding-top: 2vmin;
         }
+
+
 
         .amountOaned {
             position: absolute;
@@ -372,6 +719,32 @@
             border-radius: 0.4vmin;
             font-family: arial;
         }
+
+
+        .lederbordItem {
+            min-height: 1px;
+            width: 15.2vw;
+            float: right;
+            text-align: center;
+            font-size: 1.5vw;
+            color: #ffffff;
+            background: #5e9af9;
+            margin: 0.5vmin;
+            margin-right: 1vmin;
+            padding: 0.2vmin;
+            padding-right: 0.4vmin;
+            border-radius: 0.4vmin;
+            font-family: arial;
+        }
+
+        .t1 {
+            position: relative;
+            float: right;
+            width: 14vw;
+        }
+
+
+
 
         .namal {
 
@@ -401,17 +774,60 @@
             -ms-user-select: none;
             /* IE10+ */
         }
+
+
+        /*#contaner::-webkit-scrollbar {*/
+
+        /*    width: 4px;*/
+
+        /*}*/
+
+        /*Track*/
+
+        /*#contaner::-webkit-scrollbar-track {*/
+
+        /*    box-shadow: inset 0 0 5px grey;*/
+
+        /*    border-radius: 4px;*/
+
+        /*    padding-right: 2px;*/
+
+        /*}*/
+
+        /* Handle */
+
+        /*#contaner::-webkit-scrollbar-thumb {*/
+
+        /*    background: #b2b2b2;*/
+
+        /*    border-radius: 4px;*/
+
+        /*}*/
+
+        /* Handle on hover */
+
+        /*#contaner::-webkit-scrollbar-thumb:hover {*/
+
+        /*    background: #aaaaaa;*/
+
+        /*}*/
     </style>
 
     <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.3.0/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.3.0/firebaseui.css" />
+
     <script>
         setTimeout(function() {
 
             if (localStorage.getItem("clickerGameUser") !== "") {
-                // if(localStorage.getItem("clickerGameUser") !== null) {
-                if (window.location.href.substring(window.location.href.indexOf("gamemode=") + 9, window.location.href.indexOf("&")) !== "game") {
-                    startupGame("game");
-                    // }
+                if (localStorage.getItem("clickerGameUser") !== null) {
+                    // if(localStorage.getItem("clickerGameUser") !== null) {
+                    if (window.location.href.substring(window.location.href.indexOf("gamemode=") + 9, window.location.href.indexOf("&")) !== "game") {
+                        startupGame("game");
+                        // }
+                    }
                 }
             }
 
@@ -421,20 +837,36 @@
 
         function playGame() {
 
+            setInterval(function() {
+                if (continu === "Y") {
+                    time++;
+                }
+            }, 1000);
+
 
 
             setInterval(function() {
+
                 if (continu === "Y") {
-                    score = score + BPS;
-                    update();
+                    score = score + (BPS / 0010 / 16);
+                    totelScore = totelScore + BPS / 0010 / 16;
+                    updateShowScoreBPS();
                 }
 
-            }, 1000);
+            }, 0010);
+
+            // setInterval(function() {
+
+
+            //     date = d.getDate() + "/" + parseFloat(1 + d.getMonth()) + "\\" + d.getFullYear();
+
+            // }, 99999);
 
             setTimeout(function() {
+
                 loggedInUser = localStorage.getItem("clickerGameUser");
 
-                update();
+
                 upLoadData();
                 console.log(loggedInUser)
                 databaceUpdate(loggedInUser, function(data) {
@@ -449,6 +881,12 @@
 
 
             }, 1000);
+
+            setTimeout(function() {
+                update();
+                console.log((1 / BPS))
+                console.log("testing testing")
+            }, 5000);
 
 
 
@@ -481,36 +919,76 @@
         var YN = "N";
         var test = "";
         var loggedInUser = "";
+        var totelScore = 0;
+        var level = 1;
+        var points = 0;
+        var needed = 150;
+        var widthOfFillXp = 0;
+        var clickerSound = 1;
 
+        var d = new Date();
+        var time = 0;
+        var date = d.getDate() + "/" + parseFloat(1 + d.getMonth()) + "|" + d.getFullYear();
 
+        // Set ammount owned
         var P1H = 0;
         var P2H = 0;
         var P3H = 0;
         var P4H = 0;
         var P5H = 0;
         var P6H = 0;
+        var P7H = 0;
+        var P8H = 0;
+        var P9H = 0;
+        var P10H = 0;
+        var P11H = 0;
+        var P12H = 0;
 
-        //Set Price
+        var CP1H = 0;
+        var CP2H = 0;
+
+        // Set Price
         var P1 = 10;
         var P2 = 100;
         var P3 = 600;
         var P4 = 20000;
         var P5 = 100000;
         var P6 = 250000;
+        var P7 = 350000;
+        var P8 = 700000;
+        var P9 = 1400000;
+        var P10 = 2100000;
+        var P11 = 2800000;
+        var P12 = 3500000;
 
-        //Set original price
-        // var P1O = P1;
-        // var P2O = P2;
-        // var P3O = P3;
+        var CP1 = 30000;
+        var CP2 = 180000;
 
+        // Set unlock level
+        var LP1 = 1;
+        var LP2 = 2;
+        var LP3 = 3;
+        var LP4 = 4;
+        var LP5 = 5;
+        var LP6 = 6;
+        var LP7 = 7;
+        var LP8 = 8;
+        var LP9 = 9;
+        var LP10 = 10;
+        var LP11 = 12;
+        var LP12 = 14;
 
-        //End set price
+        var LCP1 = 3;
+        var LCP2 = 6;
+
+        // End set price
 
 
 
 
         var intival = "";
         var continu = "Y";
+        var displyMenu = "upgrades";
 
 
 
@@ -575,6 +1053,7 @@
 
         window.onfocus = function() {
             continu = "Y";
+            date = d.getDate() + "/" + parseFloat(1 + d.getMonth()) + "|" + d.getFullYear();
 
         };
 
@@ -593,11 +1072,118 @@
 
 
 
+
+
         // connect to your firebase database account
         firebase.initializeApp(config);
 
         // getting refererence to the database
         var database = firebase.database();
+
+
+
+        var uiConfig = {
+            callbacks: {
+                signInSuccessWithAuthResult: function(authResult, redirectUrl) {
+                    // User successfully signed in.
+                    // Return type determines whether we continue the redirect automatically
+                    // or whether we leave that to developer to handle.
+
+                    console.log(authResult);
+
+                    var userData = authResult
+
+
+                    localStorage.setItem("clickerGameUser", userData.user.uid)
+
+
+                    makeUserIfNotThere(userData);
+
+                    // if() {
+                    //     newAcount(userData);
+                    // }
+
+                    setTimeout(function() {
+                        startupGame("game");
+                    }, 3000);
+
+
+
+                    return false;
+
+
+                },
+                signInWithRedirect: function() {
+                    return false;
+                },
+                signInSuccess: function(currentUser, credential, redirectUrl) {
+                    console.log('Current User', currentUser);
+                    return false;
+                },
+                uiShown: function() {
+                    // The widget is rendered.
+                    // Hide the loader.
+                    // self.$.loader.style.display = 'none';
+                }
+            },
+            // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
+            signInFlow: 'popup',
+            //signInSuccessUrl: 'http://localhost:8081/components/stunt-hamster/?mode=done',
+            signInOptions: [
+                // Leave the lines as is for the providers you want to offer your users.
+                firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+                //firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+                //firebase.auth.TwitterAuthProvider.PROVIDER_ID,
+                //firebase.auth.GithubAuthProvider.PROVIDER_ID,
+                //firebase.auth.PhoneAuthProvider.PROVIDER_ID,
+                firebase.auth.EmailAuthProvider.PROVIDER_ID
+            ],
+            // Terms of service url.
+            tosUrl: '<your-tos-url>',
+            // Privacy policy url.
+            privacyPolicyUrl: '<your-privacy-policy-url>'
+        };
+
+
+        // Initialize the FirebaseUI Widget using Firebase.
+        var ui = new firebaseui.auth.AuthUI(firebase.auth());
+        // The start method will wait until the DOM is loaded.
+
+        function signin() {
+
+            ui.start('#auth', uiConfig);
+
+        }
+
+        window.onload = function() {
+            var myUrl = window.location.href;
+            if (myUrl.substring(myUrl.indexOf("mode=") + 5) === "select") {
+                signin();
+            }
+        }
+
+        window.onload = function() {
+            var myUrl = window.location.href;
+            if (myUrl.substring(myUrl.indexOf("gamemode=") + 9, myUrl.indexOf("&")) === "signin") {
+                signin();
+            }
+        }
+
+        function makeUserIfNotThere(data) {
+
+            var messagesRef = database.ref("clicker/saveCodes");
+
+
+            messagesRef.orderByChild("user").equalTo(data.user.uid).on("value", function(user) {
+                if (user.numChildren() < 1) {
+                    newAcount(data);
+                }
+
+            });
+
+        }
+
+
 
         function right(name, save) {
 
@@ -643,6 +1229,273 @@
             element.classList.remove("show");
         }
 
+        function lederbordOut() {
+
+            save();
+
+
+            updateLedabord();
+
+            setTimeout(function() {
+                updateLedabord();
+            }, 2000);
+
+            setTimeout(function() {
+                updateLedabord();
+            }, 4000);
+
+
+
+            var element = document.getElementById("lederbord");
+            element.classList.add("open");
+            element.classList.remove("close");
+        }
+
+
+
+        function updateLedabord() {
+
+
+
+
+
+            var messagesRef = database.ref("clicker/saveCodes");
+
+            var listOfScores = [];
+
+            messagesRef.orderByChild("code").on("value", function(data) {
+
+                var i = 0;
+
+                data.forEach(function(data) {
+                    i++;
+                    // alert(data.val().user)
+
+                    // console.log("found code " + data.val().code)
+
+                    var lederbordData = data.val().code.totelScore;
+                    var lederbordDataUser = data.val().user
+                    console.log("1");
+                    console.log(lederbordData);
+                    console.log("2");
+
+                    listOfScores.push({
+                        "lederbordData": lederbordData,
+                        "lederbordDataUser": lederbordDataUser
+
+                    });
+
+
+
+
+                    //console.log("User: " + data.key + " = (" + data.val().user + ", " + data.val().code + ")");
+                });
+
+            });
+
+            console.log(listOfScores);
+            //var listO = listOfScores
+
+            listOfScores.sort(function(a, b) { return a.lederbordData - b.lederbordData });
+            listOfScores.reverse();
+
+            console.log(listOfScores);
+
+            console.log("test e")
+
+
+            var messagesRef = database.ref("clicker/saveCodes");
+
+
+            var names = [];
+
+            messagesRef.orderByChild("user").on("value", function(data) {
+
+                data.forEach(function(data) {
+                    console.log(data.val().user);
+                    console.log("testing a");
+                    var itemUid = data.val().user;
+
+
+
+
+
+
+
+                });
+
+            });
+
+
+            console.log(listOfScores)
+            console.log("^^^^^^^^^^^")
+            addToLederbord(listOfScores);
+
+
+
+        }
+
+
+        function addToLederbord(list) {
+            console.log("test0");
+
+            console.log("test1");
+
+
+            document.getElementById("contaner").removeChild(document.getElementById("items"));
+            var e = document.createElement("div");
+
+            e.setAttribute("id", "items");
+
+
+
+
+            document.getElementById("contaner").appendChild(e);
+
+            // e.onclick = function() {
+            //     alert("test")
+            // };
+
+            // e.onblur = function() {
+            //     alert("test")
+            // };
+
+
+
+
+            // setTimeout(function() {
+
+            var i = -1;
+            // console.log(list.length + " test");
+            while (i <= list.length - 2) {
+
+                console.log("abcde")
+
+                i++;
+
+
+                var displayName = "";
+
+
+
+                var messagesRef = database.ref("clicker/userCodes");
+
+
+                console.log(list[i].lederbordDataUser)
+                console.log("testing f")
+
+                messagesRef.orderByChild("uid").equalTo(list[i].lederbordDataUser).on("value", function(data) {
+
+                    data.forEach(function(data) {
+                        displayName = data.val().displayName;
+
+
+
+                    });
+
+                });
+
+
+
+
+
+                //if (list.slice(i, i + 1) !== null || list.slice(i, i + 1) !== undefined || list.slice(i, i + 1) !== "undefined") {
+                //console.log(list.slice(i, i + 1));
+                console.log("abc123");
+                var e = document.createElement("div");
+                console.log(list[i]);
+
+                //var itemScore = ;
+                console.log(parseFloat(list[i].lederbordData).toFixed(0));
+
+                var data = parseFloat(list[i].lederbordData).toFixed(0);
+
+                console.log(data)
+                console.log("testing h")
+
+                var text1
+                var text2
+                var text3
+
+                if (data === "NaN") {
+                    text1 = document.createElement("div");
+                    text1.innerHTML = i + 1;
+                    text1.className = "t1";
+
+                    text2 = document.createElement("div");
+                    text2.innerHTML = displayName + ": ";
+                    text2.className = "t1";
+
+                    text3 = document.createElement("div");
+                    text3.innerHTML = "0";
+                    text3.className = "t1";
+                }
+                else {
+                    text1 = document.createElement("div");
+                    text1.innerHTML = i + 1;
+                    text1.className = "t1";
+
+                    text2 = document.createElement("div");
+                    text2.innerHTML = displayName + ": ";
+                    text2.className = "t1";
+
+                    text3 = document.createElement("div");
+                    text3.innerHTML = data;
+                    text3.className = "t1";
+
+
+
+                }
+
+
+
+
+                e.className = "lederbordItem";
+                //e.className = "button";
+                e.appendChild(text1);
+                e.appendChild(text2);
+                e.appendChild(text3);
+                // e.onclick = lederbordOut();
+                // e.onmouseover = lederbordOut()
+
+
+
+
+                document.getElementById("items").appendChild(e);
+
+                // e.onclick = function() {
+                //     alert("test")
+                // };
+
+                // e.onblur = function() {
+                //     alert("test")
+                // };
+
+
+
+                //}
+
+
+            }
+            // document.getElementsByClassName("lederbordItem").classList.add("button");
+
+            //}, 1000);
+
+        }
+
+
+
+
+        function lederbordIn() {
+            var element = document.getElementById("lederbord");
+            element.classList.add("close");
+            element.classList.remove("open");
+        }
+
+
+
+
+
 
         function save() {
 
@@ -650,11 +1503,20 @@
 
             console.log(test)
 
+
             databaceUpdate(loggedInUser, function(data) {
 
                 var savecode = {
+                    "clickerSound": clickerSound,
                     "score": score,
+                    "totelScore": totelScore,
+                    "level": level,
+                    "points": points,
+                    "needed": needed,
+                    "date": date,
+                    "time": time,
                     "BPS": BPS,
+                    "BPC": BPC,
                     "P1": P1,
                     "P1H": P1H,
                     "P2": P2,
@@ -666,7 +1528,23 @@
                     "P5": P5,
                     "P5H": P5H,
                     "P6": P6,
-                    "P6H": P6H
+                    "P6H": P6H,
+                    "P7": P7,
+                    "P7H": P7H,
+                    "P8": P8,
+                    "P8H": P8H,
+                    "P9": P9,
+                    "P9H": P9H,
+                    "P10": P10,
+                    "P10H": P10H,
+                    "P11": P11,
+                    "P11H": P11H,
+                    "P12": P12,
+                    "P12H": P12H,
+                    "CP1": CP1,
+                    "CP1H": CP1H,
+                    "CP2": CP2,
+                    "CP2H": CP2H
 
                 }
 
@@ -674,6 +1552,9 @@
                 // databaceReplace(data.key, loggedInUser, "!!" + score + "!@" + BPS + "!#" + P1 + "!$" + P1H + "!%" + P2 + "!^" + P2H + "!&" + P3 + "!*" + P3H + "!(");
                 databaceReplace(data.key, loggedInUser, savecode);
                 console.log(P1 + "2")
+
+
+
             });
 
 
@@ -688,28 +1569,48 @@
 
         }
 
+
+
+
         function databaceReplace(remove, name, code) {
             // alert(remove + ", " + name + ", " + code + ", " + loggedInUser);
             var messagesRef = database.ref("clicker/saveCodes/" + remove);
             var deleteMessageRef = messagesRef.set({ "user": name, "code": code });
 
         }
-        console.log("1 a");
-
-        //right("cat", "hamster");
 
 
 
         function clickerClicked() {
+
+            if (clickerSound === 1) {
+                var random = Math.floor(Math.random() * 10);
+
+                if (random === 1 || random === 2) {
+                    document.getElementById("sound1").play();
+                }
+                else {
+                    document.getElementById("sound").play();
+                }
+            }
+
             score = score + BPC;
+            points = points + BPC;
+            totelScore = totelScore + BPC;
             console.log(score);
+            console.log(totelScore);
             update();
+        }
+
+        function topBareUpdate() {
+            showClickerSound()
         }
 
         function openTopBare() {
             var element = document.getElementById("topBare");
             element.classList.add("dawn");
             element.classList.remove("namal");
+            topBareUpdate();
         }
 
         function closeTopBare() {
@@ -718,6 +1619,28 @@
                 element.classList.add("namal");
                 element.classList.remove("dawn");
                 console.log("close");
+            };
+
+
+
+
+        }
+
+
+
+        function changeLevel() {
+
+            widthOfFillXp = points / Math.ceil(needed) * 30;
+            document.getElementById("fillXp").style.width = widthOfFillXp + "vw";
+            document.getElementById("showXp").innerHTML = points + " / " + Math.ceil(needed);
+            document.getElementById("levelText").innerHTML = level;
+
+            if (points >= needed) {
+                level++;
+                needed = needed + (3.2 * needed);
+                points = 0;
+                console.log(points);
+
             }
 
 
@@ -725,7 +1648,13 @@
 
         }
 
+        function updateShowScoreBPS() {
+            document.getElementById("showInfo").innerHTML = " BPS: " + BPS.toFixed(1) + "<br>" + "Score: " + Math.floor(score);
+        }
+
+
         function update() {
+            changeLevel();
             document.getElementById("showInfo").innerHTML = " BPS: " + BPS.toFixed(1) + "<br>" + "Score: " + Math.floor(score);
         }
 
@@ -750,6 +1679,72 @@
             document.getElementById("U6price").innerHTML = "Price: " + P6.toFixed(1);
             document.getElementById("amountOaned6").innerHTML = P6H;
 
+            document.getElementById("U7price").innerHTML = "Price: " + P7.toFixed(1);
+            document.getElementById("amountOaned7").innerHTML = P7H;
+
+            document.getElementById("U8price").innerHTML = "Price: " + P8.toFixed(1);
+            document.getElementById("amountOaned8").innerHTML = P8H;
+
+            document.getElementById("U9price").innerHTML = "Price: " + P9.toFixed(1);
+            document.getElementById("amountOaned9").innerHTML = P9H;
+
+            document.getElementById("U10price").innerHTML = "Price: " + P10.toFixed(1);
+            document.getElementById("amountOaned10").innerHTML = P10H;
+
+
+            document.getElementById("U11price").innerHTML = "Price: " + P11.toFixed(1);
+            document.getElementById("amountOaned11").innerHTML = P11H;
+
+            document.getElementById("U12price").innerHTML = "Price: " + P12.toFixed(1);
+            document.getElementById("amountOaned12").innerHTML = P12H;
+
+
+
+            document.getElementById("CU1price").innerHTML = "Price: " + CP1.toFixed(1);
+            document.getElementById("CAmountOaned1").innerHTML = CP1H;
+
+            document.getElementById("CU2price").innerHTML = "Price: " + CP2.toFixed(1);
+            document.getElementById("CAmountOaned2").innerHTML = CP2H;
+
+
+
+            hideHiding();
+            upgradeMenu("");
+
+        }
+
+        function hideHiding() {
+
+            // Add upgrade
+            for (var i = 1; i <= 12; i++) {
+
+                if (eval("LP" + i) <= level) {
+                    var element = document.getElementById("h" + i);
+                    element.classList.add("hide");
+                    element.classList.remove("show");
+                }
+                else {
+                    var element = document.getElementById("h" + i);
+                    element.classList.add("show");
+                    element.classList.remove("hide");
+                }
+
+
+            }
+
+            for (var i = 1; i <= 2; i++) {
+
+                if (eval("LCP" + i) <= level) {
+                    var element = document.getElementById("ch" + i);
+                    element.classList.add("hide");
+                    element.classList.remove("show");
+                }
+                else {
+                    var element = document.getElementById("ch" + i);
+                    element.classList.add("show");
+                    element.classList.remove("hide");
+                }
+            }
         }
 
 
@@ -771,17 +1766,15 @@
                 showAllGame();
                 hideMainMenu();
                 hideSignInMenu();
-                hideNewAcountMenu();
+                //hideNewAcountMenu();
                 // }else {
                 //     hideAllGame();
                 //     showMainMenu();
                 //     hideSignInMenu();
                 //     hideNewAcountMenu();
 
-                //     setTimeout(function(){
-                //         localStorage.setItem("clickerGameUser", "")
-                //     }, 7000);
-                // }
+
+                //}
 
             }
             else {
@@ -796,10 +1789,13 @@
                     hideAllGame();
                     hideMainMenu();
                     showSignInMenu();
-                    hideNewAcountMenu();
+                    // hideNewAcountMenu();
 
                     // localStorage.setItem("clickerGameUser", "")
 
+                    // setTimeout(function() {
+                    //     localStorage.setItem("clickerGameUser", "")
+                    // }, 7000);
                     setTimeout(function() {
                         localStorage.setItem("clickerGameUser", "")
                     }, 7000);
@@ -812,7 +1808,7 @@
                         hideAllGame();
                         hideMainMenu();
                         hideSignInMenu();
-                        showNewAcountMenu();
+                        // showNewAcountMenu();
 
 
 
@@ -822,7 +1818,8 @@
                         hideAllGame();
                         showMainMenu();
                         hideSignInMenu();
-                        hideNewAcountMenu();
+                        setInfo();
+                        // hideNewAcountMenu();
 
 
                     }
@@ -893,16 +1890,26 @@
             element.classList.remove("show");
         }
 
-        function showNewAcountMenu() {
-            var element = document.getElementById("newAcountMenu");
-            element.classList.add("show");
-            element.classList.remove("hide");
-        }
+        // function showNewAcountMenu() {
+        //     var element = document.getElementById("newAcountMenu");
+        //     element.classList.add("show");
+        //     element.classList.remove("hide");
+        // }
 
-        function hideNewAcountMenu() {
-            var element = document.getElementById("newAcountMenu");
-            element.classList.add("hide");
-            element.classList.remove("show");
+        // function hideNewAcountMenu() {
+        //     var element = document.getElementById("newAcountMenu");
+        //     element.classList.add("hide");
+        //     element.classList.remove("show");
+        // }
+
+        function setInfo() {
+            var messagesRef = database.ref("clicker/info");
+            messagesRef.on("value", function(data) {
+
+                document.getElementById("i2").innerHTML = data.val();
+
+
+            });
         }
 
 
@@ -921,50 +1928,50 @@
 
             var messagesRef = database.ref("clicker/saveCodes");
 
-            if (window.location.href.substring(window.location.href.indexOf("gamemode=") + 9, window.location.href.indexOf("&")) === "newAccount") {
-                localStorage.setItem("clickerGameUser", document.getElementById("acountName").value);
+            // if (window.location.href.substring(window.location.href.indexOf("gamemode=") + 9, window.location.href.indexOf("&")) === "newAccount") {
+            //     localStorage.setItem("clickerGameUser", document.getElementById("acountName").value);
 
 
 
-            }
-            else {
+            // }
+            // else {
 
-                //console.log(window.location.href.substring(window.location.href.indexOf("=") + 1))
+            //console.log(window.location.href.substring(window.location.href.indexOf("=") + 1))
 
-                if (window.location.href.substring(window.location.href.indexOf("gamemode=") + 9, window.location.href.indexOf("&")) === "signin") {
+            if (window.location.href.substring(window.location.href.indexOf("gamemode=") + 9, window.location.href.indexOf("&")) === "signin") {
 
-                    //console.log("signing in " + document.getElementById("user").value)
+                //console.log("signing in " + document.getElementById("user").value)
 
-                    localStorage.setItem("clickerGameUser", document.getElementById("user").value);
+                //localStorage.setItem("clickerGameUser", document.getElementById("user").value);
 
-                    messagesRef.orderByChild("user").equalTo("Test").on("value", function(data) {
+                messagesRef.orderByChild("user").equalTo("Test").on("value", function(data) {
 
-                        //console.log("testing 2")
+                    //console.log("testing 2")
 
-                        // if(data.numChildren() > 0) {
-                        //     console.log("sign in a " + document.getElementById("user").value)
-                        //     localStorage.setItem("clickerGameUser", document.getElementById("user").value);
-                        //     console.log("#1" + localStorage.getItem("clickerGameUser"))
-                        //     // alert(document.getElementById("user").value + " testing user")
-
-
-                        // }else {
-                        //     console.log("#3")
-                        //     localStorage.setItem("clickerGameUser", "");
-                        // }
+                    // if(data.numChildren() > 0) {
+                    //     console.log("sign in a " + document.getElementById("user").value)
+                    //     localStorage.setItem("clickerGameUser", document.getElementById("user").value);
+                    //     console.log("#1" + localStorage.getItem("clickerGameUser"))
+                    //     // alert(document.getElementById("user").value + " testing user")
 
 
-
-                    });
-
-                }
+                    // }else {
+                    //     console.log("#3")
+                    //     localStorage.setItem("clickerGameUser", "");
+                    // }
 
 
 
-
-
+                });
 
             }
+
+
+
+
+
+
+            // }
             //console.log("#2" + localStorage.getItem("clickerGameUser"))
 
 
@@ -1004,9 +2011,9 @@
             element.classList.remove("show");
         }
 
-        function changeBPS(changBy, name) {
+        function changeBPS(changBy, name, number) {
             YN = "N";
-            if (score >= eval(name)) {
+            if (score >= eval(name) && number <= level) {
                 YN = "Y";
                 BPS = BPS + changBy;
                 console.log("byed")
@@ -1014,6 +2021,21 @@
 
             }
         }
+
+
+
+        function changeBPC(changBy, name, number) {
+            YN = "N";
+            if (score >= eval(name) && number <= level) {
+                YN = "Y";
+                BPC = BPC + changBy;
+                console.log("byed")
+                console.log(eval(name))
+
+
+            }
+        }
+
 
         function upLoadData() {
 
@@ -1042,40 +2064,54 @@
 
             // savecodefa
             if (data !== "") {
-                console.log(data + " testing")
 
-                // score = parseFloat(data.substring(data.indexOf("!!") + 2, data.indexOf("!@")) + "<br>")
-                // BPS = parseFloat(data.substr(data.indexOf("!@") + 2, data.indexOf("!#") - 5) + "<br>")
-
-                // console.log(data.indexOf("!#") + 2 + " substring" + " | " + data.indexOf("!$") + " | " + data.substring(8, 11))
-
-                // P1 = parseFloat(data.substr(data.indexOf("!#") + 2, data.indexOf("!$")));
-                // P1H = parseFloat(data.substr(data.indexOf("!$") + 2, data.indexOf("!%")));
-                // P2 = parseFloat(data.substr(data.indexOf("!%") + 2, data.indexOf("!^")));
-                // P2H = parseFloat(data.substr(data.indexOf("!^") + 2, data.indexOf("!&")));
-                // P1 = parseFloat(data.substr(data.indexOf("!&") + 2, data.indexOf("!*")));
-                // P3H = parseFloat(data.substr(data.indexOf("!*") + 2, data.indexOf("!(")));
+                clickerSound = (data.clickerSound === undefined ? clickerSound : data.clickerSound);
+                score = (data.score === undefined ? score : data.score);
+                totelScore = (data.totelScore === undefined ? totelScore : data.totelScore);
+                BPS = (data.BPS === undefined ? BPS : data.BPS);
+                BPC = (data.BPC === undefined ? BPC : data.BPC);
+                level = (data.level === undefined ? level : data.level);
+                points = (data.points === undefined ? points : data.points);
+                needed = (data.needed === undefined ? needed : data.needed);
+                date = (data.date === undefined ? date : data.date);
+                time = (data.time === undefined ? time : data.time);
 
 
+                P1 = (data.P1 === undefined ? P1 : data.P1);
+                P1H = (data.P1H === undefined ? P1H : data.P1H);
+                P2 = (data.P2 === undefined ? P2 : data.P2);
+                P2H = (data.P2H === undefined ? P2H : data.P2H);
+                P3 = (data.P3 === undefined ? P3 : data.P3);
+                P3H = (data.P3H === undefined ? P3H : data.P3H);
+                P4 = (data.P4 === undefined ? P4 : data.P4);
+                P4H = (data.P4H === undefined ? P4H : data.P4H);
+                P5 = (data.P5 === undefined ? P5 : data.P5);
+                P5H = (data.P5H === undefined ? P5H : data.P5H);
+                P6 = (data.P6 === undefined ? P6 : data.P6);
+                P6H = (data.P6H === undefined ? P6H : data.P6H);
 
-                score = data.score
-                BPS = data.BPS
+                CP1 = (data.CP1 === undefined ? CP1 : data.CP1);
+                CP1H = (data.CP1H === undefined ? CP1H : data.CP1H);
+                CP2 = (data.CP2 === undefined ? CP2 : data.CP2);
+                CP2H = (data.CP2H === undefined ? CP2H : data.CP2H);
 
-                P1 = data.P1;
-                P1H = data.P1H;
-                P2 = data.P2;
-                P2H = data.P2H;
-                P3 = data.P3;
-                P3H = data.P3H;
-                P4 = data.P4;
-                P4H = data.P4H;
-                P5 = data.P5;
-                P5H = data.P5H;
-                P6 = data.P6;
-                P6H = data.P6H;
+                P7 = (data.P7 === undefined ? P7 : data.P7);
+                P7H = (data.P7H === undefined ? P7H : data.P7H);
+                P8 = (data.P8 === undefined ? P8 : data.P8);
+                P8H = (data.P8H === undefined ? P8H : data.P8H);
+                P9 = (data.P9 === undefined ? P9 : data.P9);
+                P9H = (data.P9H === undefined ? P9H : data.P9H);
+                P10 = (data.P10 === undefined ? P10 : data.P10);
+                P10H = (data.P10H === undefined ? P10H : data.P10H);
+                P11 = (data.P11 === undefined ? P11 : data.P11);
+                P11H = (data.P11H === undefined ? P11H : data.P11H);
+                P12 = (data.P12 === undefined ? P12 : data.P12);
+                P12H = (data.P12H === undefined ? P12H : data.P12H);
 
 
-                //console.log(data.substr(data.indexOf("!@") + 2, data.indexOf("!#") - 5) + " saved BPS")
+
+
+
             }
             console.log(data)
         }
@@ -1083,7 +2119,11 @@
         function makeAcount(name) {
 
             right(name, "");
-            startupGame("game");
+            setTimeout(function() {
+                startupGame("game");
+
+            }, 2000);
+
         }
 
         function displayError(message) {
@@ -1093,34 +2133,123 @@
 
         }
 
-        function newAcount() {
-            var name = document.getElementById("acountName").value;
-
-            var messagesRef = database.ref("clicker/saveCodes");
+        function newAcount(data) {
+            // var name = document.getElementById("acountName").value;
 
 
-            messagesRef.orderByChild("user").equalTo(name).on("value", function(data) {
+            var messagesRef = database.ref("clicker/userCodes");
 
-                if (!data.numChildren() > 0) {
-                    // callback(true)
-                    if (name !== "") {
-                        makeAcount(name);
-                    }
-                    else {
-                        displayError("You need to have a username");
-                    }
-                }
-                else {
-                    // callback()
-                    displayError("Username Or Password Allredy Used");
-                }
+            var newMessageRef = messagesRef.push();
+
+
+
+            newMessageRef.set({
+                "uid": data.user.uid,
+                "displayName": data.user.displayName,
+                "email": data.user.email
 
             });
+
+
+            var name = data.user.uid;
+
+            // var messagesRef = database.ref("clicker/saveCodes");
+            console.log(name + " name")
+            makeAcount(name);
+
+
+
+
+
+
+            // messagesRef.orderByChild("user").equalTo(name).on("value", function(data) {
+
+            //     if (!data.numChildren() > 0) {
+            //         // callback(true)
+            //         if (name !== "") {
+            //             makeAcount(name);
+            //         }
+            //         else {
+            //             displayError("You need to have a username");
+            //         }
+            //     }
+            //     else {
+            //         // callback()
+            //         displayError("Username Or Password Allredy Used");
+            //     }
+
+            // });
         }
 
+
+        function clickerSoundF() {
+            clickerSound = 1 - clickerSound;
+
+
+            showClickerSound();
+
+        }
+
+        function showClickerSound() {
+            if (clickerSound === 1) {
+                var element = document.getElementById("toggelClickerSound");
+                element.innerHTML = "On";
+                element.style.background = "#33d636"
+            }
+            else {
+                var element = document.getElementById("toggelClickerSound");
+                element.innerHTML = "Off";
+                element.style.background = "#ff1919"
+            }
+        }
+
+
         function logoutUser() {
+            save();
+
             localStorage.setItem("clickerGameUser", "")
             startupGame("mainMenu")
+        }
+
+        function upgradeMenu(menu) {
+            if (menu === "BPS") {
+                displyMenu = "upgrades"
+            }
+
+            if (menu === "BPC") {
+
+                displyMenu = "bpcUpgrades"
+            }
+
+            upgradeMenus();
+        }
+
+        function upgradeMenus() {
+
+            // hides all
+
+            var element = document.getElementById("upgrades");
+            element.classList.add("hide");
+            element.classList.remove("show");
+
+            var element = document.getElementById("bpcUpgrade");
+            element.classList.add("hide");
+            element.classList.remove("show");
+
+
+            // shows corect one
+
+            if (displyMenu === "upgrades") {
+                var element = document.getElementById("upgrades");
+                element.classList.add("show");
+                element.classList.remove("hide");
+            }
+
+            if (displyMenu === "bpcUpgrades") {
+                var element = document.getElementById("bpcUpgrade");
+                element.classList.add("show");
+                element.classList.remove("hide");
+            }
         }
 
 
@@ -1175,6 +2304,75 @@
             }
         }
 
+        function P7C() {
+            if (YN === "Y") {
+                P7 = P7 + (0.03 * P7)
+                P7H = P7H + 1;
+                console.log(P7.toFixed(2))
+            }
+        }
+
+        function P8C() {
+            if (YN === "Y") {
+                P8 = P8 + (0.03 * P8)
+                P8H = P8H + 1;
+                console.log(P8.toFixed(2))
+            }
+        }
+
+        function P9C() {
+            if (YN === "Y") {
+                P9 = P9 + (0.03 * P9)
+                P9H = P9H + 1;
+                console.log(P9.toFixed(2))
+            }
+        }
+
+        function P10C() {
+            if (YN === "Y") {
+                P10 = P10 + (0.03 * P10)
+                P10H = P10H + 1;
+                console.log(P10.toFixed(2))
+            }
+        }
+
+        function P11C() {
+            if (YN === "Y") {
+                P11 = P11 + (0.03 * P11)
+                P11H = P11H + 1;
+                console.log(P11.toFixed(2))
+            }
+        }
+
+        function P12C() {
+            if (YN === "Y") {
+                P12 = P12 + (0.03 * P12)
+                P12H = P12H + 1;
+                console.log(P12.toFixed(2))
+            }
+        }
+
+
+
+
+
+
+        function CP1C() {
+            if (YN === "Y") {
+                CP1 = CP1 + (0.03 * CP1)
+                CP1H = CP1H + 1;
+                console.log(P6.toFixed(2))
+            }
+        }
+
+        function CP2C() {
+            if (YN === "Y") {
+                CP2 = CP2 + (0.03 * CP2)
+                CP2H = CP2H + 1;
+                console.log(P2.toFixed(2))
+            }
+        }
+
 
 
 
@@ -1189,88 +2387,326 @@
 
 </head>
 
+<link rel="icon" href="ClickerGame-clickerIcon.png">
+
 <body>
 
-    <title>C2</title>
+    <title>Click-A-Blackberry</title>
 
     <div class="noSelecting" id="game" class="show">
+
+
+
+        <audio id="sound">
+            <source src="ClickerGame-sound1.wav" type="audio/wav">
+        </audio>
+        <audio id="sound1">
+            <source src="ClickerGame-sound2.wav" type="audio/wav">
+        </audio>
+
+
+
+        <div class="close" id="lederbord">
+            <div id="contaner">
+                <div id="items">
+
+                </div>
+            </div>
+
+            <div class="button" id="closeLederbordButton" onclick="lederbordIn()">
+                Close
+            </div>
+        </div>
+
+        <div id="openLederbord" onclick="lederbordOut()">
+
+        </div>
 
 
         <div id="shop" class="hide">
             <div id="upgrades">
                 <!--<button onclick="changeBPS(1, 'P1'); pay('P1'); P1C()">+</button>-->
 
-                <div class="upgrade button" id="u1" onclick="changeBPS(0.1, 'P1'); pay('P1'); P1C(); updateShop()">
-                    <img src="ClickerGame-upgrade1.svg" id="u1p"></img>
-                    <span class="name">Blackberry Finder</span>
+                <div id="upgradeLeft">
 
-                    <span class="upgradeText" id="U1price"></span>
-                    <span class="upgradeText" id=U1BPS>BPS: 0.1</span>
-                    <span class="amountOaned" id="amountOaned1">0</span>
+                    <div class="upgrade button" id="u1" onclick="changeBPS(0.1, 'P1', 1); pay('P1'); P1C(); updateShop()">
+
+                        <div class="over" id="h1" title="Unlock at level 1" onclick="alert('Unlock at level 1')">
+
+                        </div>
+
+                        <img src="ClickerGame-upgrade1.png" id="u1p"></img>
+                        <span class="name">Blackberry Finder</span>
+
+                        <span class="upgradeText" id="U1price"></span>
+                        <span class="upgradeText" id=U1BPS>BPS: + 0.1</span>
+                        <span class="amountOaned" id="amountOaned1">0</span>
+
+
+                    </div>
+
+
+                    <div class="upgrade button" id="u2" onclick="changeBPS(1, 'P2', 2); pay('P2'); P2C(); updateShop()">
+
+                        <div class="over" id="h2" title="Unlock at level 2" onclick="alert('Unlock at level 2')">
+
+                        </div>
+
+
+                        <img src="ClickerGame-upgrade2.png" id="u2p"></img>
+                        <span class="name">Blackberry Bush</span>
+
+                        <span class="upgradeText" id="U2price"></span>
+                        <span class="upgradeText" id=U2BPS>BPS: + 1</span>
+                        <span class="amountOaned" id="amountOaned2">0</span>
+                    </div>
+
+                    <div class="upgrade button" id="u3" onclick="changeBPS(4, 'P3', 3); pay('P3'); P3C(); updateShop()">
+
+                        <div class="over" id="h3" title="Unlock at level 3" onclick="alert('Unlock at level 3')">
+
+                        </div>
+
+                        <img src="ClickerGame-upgrade3.png" id="u3p"></img>
+                        <span class="name">Blackberry Machine</span>
+
+                        <span class="upgradeText" id="U3price"></span>
+                        <span class="upgradeText" id=U3BPS>BPS: + 4</span>
+                        <span class="amountOaned" id="amountOaned3">0</span>
+                    </div>
+
+                    <div class="upgrade button" id="u4" onclick="changeBPS(15, 'P4', 4); pay('P4'); P4C(); updateShop()">
+
+                        <div class="over" id="h4" title="Unlock at level 4" onclick="alert('Unlock at level 4')">
+
+                        </div>
+
+
+                        <img src="ClickerGame-upgrade4.png" id="u4p"></img>
+                        <span class="name">Blackberry Paddock</span>
+
+                        <span class="upgradeText" id="U4price"></span>
+                        <span class="upgradeText" id=U4BPS>BPS: + 15</span>
+                        <span class="amountOaned" id="amountOaned4">0</span>
+                    </div>
+
+                    <div class="upgrade button" id="u5" onclick="changeBPS(250, 'P5', 5); pay('P5'); P5C(); updateShop()">
+
+                        <div class="over" id="h5" title="Unlock at level 5" onclick="alert('Unlock at level 5')">
+
+                        </div>
+
+                        <img src="ClickerGame-upgrade5.png" id="u5p"></img>
+                        <span class="name">Blackberry Farm</span>
+
+                        <span class="upgradeText" id="U5price"></span>
+                        <span class="upgradeText" id=U5BPS>BPS: + 250</span>
+                        <span class="amountOaned" id="amountOaned5">0</span>
+                    </div>
+
+                    <div class="upgrade button" id="u6" onclick="changeBPS(500, 'P6', 6); pay('P6'); P6C(); updateShop()">
+
+                        <div class="over" id="h6" title="Unlock at level 6" onclick="alert('Unlock at level 6')">
+
+                        </div>
+
+
+                        <img src="ClickerGame-upgrade6.png" id="u6p"></img>
+                        <span class="name">Blackberry Factory</span>
+
+                        <span class="upgradeText" id="U6price"></span>
+                        <span class="upgradeText" id=U6BPS>BPS: + 500</span>
+                        <span class="amountOaned" id="amountOaned6">0</span>
+                    </div>
                 </div>
 
-                <div class="upgrade button" id="u2" onclick="changeBPS(1, 'P2'); pay('P2'); P2C(); updateShop()">
-                    <img src="ClickerGame-upgrade2.svg" id="u2p"></img>
-                    <span class="name">Blackberry Bush</span>
 
-                    <span class="upgradeText" id="U2price"></span>
-                    <span class="upgradeText" id=U2BPS>BPS: 1</span>
-                    <span class="amountOaned" id="amountOaned2">0</span>
+                <div id="upgradeRight">
+
+
+                    <div class="upgrade button" id="u7" onclick="changeBPS(600, 'P7', 7); pay('P7'); P7C(); updateShop()">
+
+                        <div class="over" id="h7" title="Unlock at level 7" onclick="alert('Unlock at level 7')">
+
+                        </div>
+
+                        <img src="ClickerGame-upgrade7.png" id="u7p"></img>
+                        <span class="name">Blackberry Well</span>
+
+                        <span class="upgradeText" id="U7price"></span>
+                        <span class="upgradeText" id=U7BPS>BPS: + 600</span>
+                        <span class="amountOaned" id="amountOaned7">0</span>
+
+
+                    </div>
+
+
+                    <div class="upgrade button" id="u8" onclick="changeBPS(1000, 'P8', 8); pay('P8'); P8C(); updateShop()">
+
+                        <div class="over" id="h8" title="Unlock at level 8" onclick="alert('Unlock at level 8')">
+
+                        </div>
+
+
+                        <img src="ClickerGame-upgrade8.png" id="u8p"></img>
+                        <span class="name">Blackberry Bank</span>
+
+                        <span class="upgradeText" id="U8price"></span>
+                        <span class="upgradeText" id=U8BPS>BPS: + 1000</span>
+                        <span class="amountOaned" id="amountOaned8">0</span>
+                    </div>
+
+                    <div class="upgrade button" id="u8" onclick="changeBPS(1700, 'P9', 9); pay('P9'); P9C(); updateShop()">
+
+                        <div class="over" id="h9" title="Unlock at level 9" onclick="alert('Unlock at level 9')">
+
+                        </div>
+
+                        <img src="ClickerGame-upgrade9.png" id="u9p"></img>
+                        <span class="name">Blackberry Pump</span>
+
+                        <span class="upgradeText" id="U9price"></span>
+                        <span class="upgradeText" id=U9BPS>BPS: + 1700</span>
+                        <span class="amountOaned" id="amountOaned9">0</span>
+                    </div>
+
+                    <div class="upgrade button" id="u10" onclick="changeBPS(2500, 'P10', 10); pay('P10'); P10C(); updateShop()">
+
+                        <div class="over" id="h10" title="Unlock at level 10" onclick="alert('Unlock at level 10')">
+
+                        </div>
+
+
+                        <img src="ClickerGame-upgrade10.png" id="u10p"></img>
+                        <span class="name">Blackberry Rain Cloud</span>
+
+                        <span class="upgradeText" id="U10price"></span>
+                        <span class="upgradeText" id=U10BPS>BPS: + 2500</span>
+                        <span class="amountOaned" id="amountOaned10">0</span>
+                    </div>
+
+                    <div class="upgrade button" id="u11" onclick="changeBPS(3000, 'P11', 12); pay('P11'); P11C(); updateShop()">
+
+                        <div class="over" id="h11" title="Unlock at level 12" onclick="alert('Unlock at level 12')">
+
+                        </div>
+
+                        <img src="ClickerGame-upgrade11.png" id="u11p"></img>
+                        <span class="name">Blackberry Mine</span>
+
+                        <span class="upgradeText" id="U11price"></span>
+                        <span class="upgradeText" id=U11BPS>BPS: + 3000</span>
+                        <span class="amountOaned" id="amountOaned11">0</span>
+                    </div>
+
+                    <div class="upgrade button" id="u12" onclick="changeBPS(5000, 'P12', 14); pay('P12'); P12C(); updateShop()">
+
+                        <div class="over" id="h12" title="Unlock at level 14" onclick="alert('Unlock at level 14')">
+
+                        </div>
+
+
+                        <img src="ClickerGame-upgrade12.png" id="u12p"></img>
+                        <span class="name">Blackberry Mining Robot</span>
+
+                        <span class="upgradeText" id="U12price"></span>
+                        <span class="upgradeText" id=U12BPS>BPS: + 5000</span>
+                        <span class="amountOaned" id="amountOaned12">0</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+            <div id="bpcUpgrade">
+
+                <div class="upgrade button" id="ub1p" onclick="changeBPC(1, 'CP1', 3); pay('CP1'); CP1C(); updateShop()">
+
+                    <div class="over" id="ch1" title="Unlock at level 3" onclick="alert('Unlock at level 3')">
+
+                    </div>
+
+                    <img src="ClickerGame-bpcUpgrade1.png" id="cu1p"></img>
+                    <span class="name">Power Click</span>
+
+                    <span class="upgradeText" id="CU1price"></span>
+                    <span class="upgradeText" id=CU1BPS>BPC: + 1</span>
+                    <span class="amountOaned" id="CAmountOaned1">0</span>
+
+
+
+
                 </div>
 
-                <div class="upgrade button" id="u3" onclick="changeBPS(4, 'P3'); pay('P3'); P3C(); updateShop()">
-                    <img src="ClickerGame-upgrade3.svg" id="u3p"></img>
-                    <span class="name">Blackberry Machine</span>
+                <div class="upgrade button" id="ub2p" onclick="changeBPC(5, 'CP2', 6); pay('CP2'); CP2C(); updateShop()">
 
-                    <span class="upgradeText" id="U3price"></span>
-                    <span class="upgradeText" id=U3BPS>BPS: 4</span>
-                    <span class="amountOaned" id="amountOaned3">0</span>
-                </div>
+                    <div class="over" id="ch2" title="Unlock at level 6" onclick="alert('Unlock at level 6')">
 
-                <div class="upgrade button" id="u4" onclick="changeBPS(15, 'P4'); pay('P4'); P4C(); updateShop()">
-                    <img src="ClickerGame-upgrade4.svg" id="u4p"></img>
-                    <span class="name">Blackberry Paddock</span>
+                    </div>
 
-                    <span class="upgradeText" id="U4price"></span>
-                    <span class="upgradeText" id=U4BPS>BPS: 15</span>
-                    <span class="amountOaned" id="amountOaned4">0</span>
-                </div>
+                    <img src="ClickerGame-bpcUpgrade2.svg" id="cu2p"></img>
+                    <span class="name">Super Click</span>
 
-                <div class="upgrade button" id="u5" onclick="changeBPS(250, 'P5'); pay('P5'); P5C(); updateShop()">
-                    <img src="ClickerGame-upgrade5.svg" id="u5p"></img>
-                    <span class="name">Blackberry Farm</span>
+                    <span class="upgradeText" id="CU2price"></span>
+                    <span class="upgradeText" id=CU1BPS>BPC: + 5</span>
+                    <span class="amountOaned" id="CAmountOaned2">0</span>
 
-                    <span class="upgradeText" id="U5price"></span>
-                    <span class="upgradeText" id=U5BPS>BPS: 250</span>
-                    <span class="amountOaned" id="amountOaned5">0</span>
-                </div>
 
-                <div class="upgrade button" id="u6" onclick="changeBPS(500, 'P6'); pay('P6'); P6C(); updateShop()">
-                    <img src="ClickerGame-upgrade6.svg" id="u6p"></img>
-                    <span class="name">Blackberry Factory</span>
 
-                    <span class="upgradeText" id="U6price"></span>
-                    <span class="upgradeText" id=U6BPS>BPS: 500</span>
-                    <span class="amountOaned" id="amountOaned6">0</span>
+
                 </div>
 
             </div>
+
+
 
 
             <div class="button" id="closeShopButton" onclick="closeShop()">
                 Close
             </div>
+
+            <div class="button" id="bpsShopButton" onclick="upgradeMenu('BPS')">
+                <img id="bpsIcon" src="ClickerGame-clickerIcon.png"></img>
+            </div>
+
+            <div class="button" id="bpcShopButton" onclick="upgradeMenu('BPC')">
+                <img id="bpsIcon" src="ClickerGame-bpcUpgrade1.png"></img>
+            </div>
+
+
         </div>
 
+
+
         <div onclick="openTopBare()" onmouseover="openTopBare()" id="detect">
+            <div id="xp">
+                <div id="fillXp">
+
+                </div>
+
+                <span id="showXp">
+                    
+                </span>
+            </div>
+
+            <div id="level">
+                <span id="levelText">
+                    
+                </span>
+            </div>
 
         </div>
 
         <div id="clicker" onclick="clickerClicked()">
-            <img src="ClickerGame-clickerIcon.svg" id="clickerIcon"></img>
+            <img src="ClickerGame-clickerIcon.png" id="clickerIcon"></img>
         </div>
 
         <div onmouseout="closeTopBare()" onblur="closeTopBare()" id="topBare" class="namal">
+            <div class="button" id="clickerSound"><span id="clickerSoundText">Clicker Sound:</span>
+                <div class="button" id="toggelClickerSound" onclick="clickerSoundF()"></div>
+            </div>
             <div class="button" id="saveButton" onclick="save()">Save</div>
             <div class="button" id="loggoutUserButton" onclick="logoutUser()">Logout</div>
 
@@ -1284,7 +2720,7 @@
 
         <div id="info" class="hide">
             <div id="infoText">
-                erhlsafluuhdufdfdlmlj jdjdjdjdjifheriuhfiueneufh rgrghruhfjddfuewhfuewh fyugyugftyddyddhfhfhhfhfk gerhlihaeihuigiurslnfkjsfhgwdsj fhhlshfuiherufdjherjdfhbjhcsdb
+                Instructions coming soon!
             </div>
 
             <div class="button" id="closeInfoBoxButton" onclick="hideInfoBox()">
@@ -1297,12 +2733,18 @@
         </div>
 
         <div id="shopButton" class="button" onclick="openShop()">
-            <img id="shopIcon" src="ClickerGame-shopIcon.svg"></img>
+            <img id="shopIcon" src="ClickerGame-shopIcon.png"></img>
         </div>
 
         <div id="stop" class="hide">
 
         </div>
+
+        <!--<div class="button" id="feadback">-->
+        <!--    Feadback-->
+        <!--    <img id="feadbackIcon" src="ClickerGame-feadbackIcon.svg"></img>-->
+        <!--</div>-->
+
     </div>
 
 
@@ -1317,25 +2759,33 @@
     <div class="noSelecting" id="mainMenu" class="show">
         <div id="around">
             <div onclick="startupGame('signin')" id="signInButton" class="button">
-                Sign In
+                Play
             </div>
 
-            <div id="makeAcountButton" class="button" onclick="startupGame('newAccount')">
-                Make Acount
+            <div id="gameInfo" class="button">
+                <div id="i1">Japps Click-A-Blackberry<br>V0.0.3 Beta</div>
+                <div id="i2"></div>
             </div>
+
+            <!--<div id="makeAcountButton" class="button" onclick="startupGame('newAccount')">-->
+            <!--    Make Acount-->
+            <!--</div>-->
         </div>
     </div>
 
     <div class="noSelecting" id="signInMenu" class="show">
-        <input type="text" id="user"></input>
-        <button onclick="startupGame('game')">done</button>
+        <!--<input type="text" id="user"></input>-->
+        <!--<button onclick="startupGame('game')">done</button>-->
+        <div id="auth">
+
+        </div>
     </div>
 
-    <div class="noSelecting" class="show" id="newAcountMenu">
-        <input type="text" id="acountName"></input>
-        <button onclick="newAcount()">done</button>
-        <span id="displayErrorText"></span>
-    </div>
+    <!--<div class="noSelecting" class="show" id="newAcountMenu">-->
+    <!--    <input type="text" id="acountName"></input>-->
+    <!--    <button onclick="newAcount()">done</button>-->
+    <!--    <span id="displayErrorText"></span>-->
+    <!--</div>-->
 
 
     <div class="noSelecting" class="show" id="loadScreen">

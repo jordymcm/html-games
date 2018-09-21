@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        #body {
+            background: red;
+        }
+        #cardB {
+            box-shadow: 3px 3px 10px grey;
+            top: 15%;
+            left: 50%;
+            position: absolute;
+            background: #ffffff;
+            height: 70vmin;
+            width: 50vmin;
+        }
+        #cardA {
+            box-shadow: -4px 3px 10px grey;
+            overflow: hidden;
+            top: 15%;
+            left: 50%;
+            position: absolute;
+            background: #d6d6d6;
+            height: 70vmin;
+            width: 50vmin;
+            transition: width 4s, left 4s;
+        }
+        #open {
+            background: blue;
+            position: absolute;
+            left: 40%;
+            top: 40%;
+            width: 10vmin;
+            height: 10vmin;
+            border-radius: 50%;
+            transition: width 4s;
+        }
+        #text {
+            position: absolute;
+            top: 10vmin;
+            left: 10vmin;
+            width: 50%;
+            color: #000000;
+            font-size: 4vmin;
+            font-family: arial;
+            text-align: center;
+        }
+        #code {
+            top: 26%;
+            left: 30%;
+            position: absolute;
+            height: 30vmin;
+            /*width: 30vmin;*/
+        }
+        #codeText {
+            border: solid 1px lightGray;
+            min-height: 20vmin;
+            width: 20vmin;
+            /*padding: 40%;*/
+            color: #000000;
+            font-size: 2vmin;
+            font-family: arial;
+            overflow: scroll;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            document.getElementById("code").style.display = "none";
+        }
+        function opening() {
+            alert("test");
+            document.getElementById("cardA").style.width = "0px";
+            document.getElementById("open").style.width = "0px";
+            document.getElementById("code").style.width = "0px";
+            document.getElementById("codeText").style.width = "0px";
+            setTimeout(function() {
+                document.getElementById("open").style.display = "none";
+                document.getElementById("code").style.display = "block";
+                document.getElementById("code").style.width = "30vmin";
+                document.getElementById("codeText").style.width = "20vmin";
+                document.getElementById("cardA").style.width = "50vmin";
+                document.getElementById("cardA").style.left = "25%";
+                document.getElementById("cardA").style.background = "#ffffff";
+                document.getElementById("cardA").style.borderRight = "2px solid #d6d6d6";
+            }, 4000);
+        }
+    </script>
+</head>
+
+<body id="body">
+    <div id="cardB">
+        <span id="text">
+            I hope you feel better soon Jemima :)
+        </span>
+    </div>
+    <div id="cardA">
+        <div onclick="opening()" id="open">
+
+        </div>
+
+
+        <div id="code">
+            <!--<div data="Text.txt" id="codeText">-->
+                    <object data="Text.txt" id="codeText"></object>
+            <!--</div>-->
+        </div>
+    </div>
+</body>

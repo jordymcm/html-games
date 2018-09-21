@@ -2,89 +2,30 @@
 
 <head>
     <style>
+        #test {
+            position: absolute;
+            z-index: 10;
+            height: 300px;
+            width: 300px;
+        }
+        
+        #testa {
+            position: absolute;
+            z-index: 1;
+            height: 300px;
+            width: 300px;
+            background: red;
+        }
     </style>
 
     <script>
-        
-        var score = 0;
-        var intival = "";
-        var continu = "Y";
-
-
-
-
-        function setIntivalF() {
-
-            intival = setInterval(function() {
-                continu = "N";
-            }, 5000);
-
-
-        }
-
-        setTimeout(function() {
-            setIntivalF();
-        }, 1000);
-
-        function clear() {
-            clearInterval(intival);
-            continu = "Y";
-            setIntivalF();
-            
-        }
-
-
-
-
-
-        this.addEventListener("mousemove", function() {
-            clear();
-        });
-
-        this.addEventListener("mousedown", function() {
-            clear();
-        });
-
-        this.addEventListener("keypress", function() {
-            clear();
-        });
-
-        this.addEventListener("DOMMouseScroll", function() {
-            clear();
-        });
-
-        this.addEventListener("mousewheel", function() {
-            clear();
-        });
-
-        this.addEventListener("touchmove", function() {
-            clear();
-        });
-
-        this.addEventListener("MSPointerMove", function() {
-            clear();
-        });
-
-
-        window.onblur = function() {
-            continu = "N";
-
-        };
-
-        window.onfocus = function() {
-            continu = "Y";
-
-        };
-
-        setInterval(function() {
-            if (continu === "Y") {
-                score++;
-                console.log(score);
-            }
-        }, 1000);
     </script>
 </head>
 
 <body>
+    <input id="test"/> 
 
+    <!--<div id="testa">-->
+        
+    <!--</div>-->
 </body>
